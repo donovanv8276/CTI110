@@ -1,21 +1,25 @@
-###Calcuate your travel expenses###
-###20231006###
-###CTI-110 P1HW2 - Travel Expense###
-###Victor Donovan###
+ # CTI-110
+   # P2HW2 - Module Grades
+   # Victor Donovan
+   # 02NOV2023
+   #
 
-print('This program calculates and displays travel expenses')
-spend_budget = float(input('Enter Budget:'))
-travel_des = input('Enter your travel destination:')
-spend_gas = float(input('How much do you think you will spend on gas?'))
-spend_hotel = float(input('Approximately, how much will you need for accomodation\hotel?'))
-spend_food = float(input('Last, how much do you need for food?'))
+Module_grades=[]
+Module_1=float(input('Module 1:'))
+Module_3=float(input('Module 3:'))
+Module_4=float(input('Module 4:'))
+Module_5=float(input('Module 5:'))
+Module_6=float(input('Module 6:'))
 
-print('------------Travel Expenses------------')
-print('location:',travel_des)
-print(f'Initial Budget: ${spend_budget:.1f}')
-print(f'Fuel: ${spend_gas:.1f}')
-print(f'Accomodation: ${spend_hotel:.1f}')
-print(f'Food: ${spend_food:.1f}')
-print('---------------------------------------')
+Module_grades=(Module_1,Module_2,Module_3,Module_4,Module_5,Module_6)
 
-print('Remaining Balance:',spend_budget-spend_gas-spend_hotel-spend_food)
+Sum_of_grades=(Module_1+Module_2+Module_3+Module_4+Module_5+Module_6)
+
+Grade_average=(Sum_of_grades/6)
+
+print(------------Results------------)
+print(f'Lowest Grade:{min(Module_grades)}')
+print(f'Highest Grade:{max(Module_grades)}')
+print('Sum of Grades:'Sum_of_grades)
+print('Average:'Grade_average)
+print(----------------------------------------------)
